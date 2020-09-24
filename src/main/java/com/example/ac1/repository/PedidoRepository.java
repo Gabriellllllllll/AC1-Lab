@@ -34,6 +34,7 @@ public class PedidoRepository {
         Pedido aux = getPedidoByCodigo(pedido.getCodigo());
         if(aux != null){
             aux.setValor(pedido.getValor());
+            aux.setCliente(pedido.getCliente());
             aux.setDescricao(pedido.getDescricao()); 
             aux.setDatapedido(pedido.getDatapedido());
         }

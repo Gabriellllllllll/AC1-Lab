@@ -3,6 +3,7 @@ package com.example.ac1.model;
 public class Pedido {
     private int codigo;
     private double valor;
+    private String cliente;
     private String descricao;
     private String datapedido;
 
@@ -36,5 +37,13 @@ public class Pedido {
 
     public void setDatapedido(String datapedido) {
         this.datapedido = datapedido;
+    }
+
+    public String getCliente() {
+        return cliente;
+    }
+
+    public void setCliente(String cliente) {
+        this.cliente = cliente;
     }
 }
